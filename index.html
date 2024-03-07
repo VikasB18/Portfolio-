@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vikas Bandi Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <!-- Portfolio logo -->
+    <h1>
+      <a href="index.html">
+        <span class="fa-solid fa-code" aria-hidden="true"></span>
+        <span>Vikas Bandi</span>
+      </a>
+    </h1>
+    <!-- Mobile navigation -->
+    <span class="mobile-nav">
+      <a class="mobile-nav--open" href="#nav-mob" aria-label="Open main menu">
+        <span class="sr-only">Open main menu</span>
+        <span class="fa-solid fa-bars" aria-hidden="true"></span>
+      </a>
+      <nav id="nav-mob">
+        <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/vikas-bandi-90bb191bb/" target="_blank">
+              <span class="fa-brands fa-linkedin-in" aria-hidden="true"></span>
+              <span class="sr-only">Linkedin</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/VikasB18" target="_blank">
+              <span class="fa-brands fa-github" aria-hidden="true"></span>
+              <span class="sr-only">GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Resume
+            </a>
+          </li>
+        </ul>
+        <a class="mobile-nav--close" href="#" aria-label="Close main menu">
+          <span class="sr-only">Close main menu</span>
+          <span class="fa-regular fa-circle-xmark" aria-hidden="true"></span>
+        </a>
+      </nav>
+    </span>
+    <!-- Desktop-tablet navigation -->
+    <span class="desktop-nav">
+      <nav>
+        <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/vikas-bandi-90bb191bb/" target="_blank">
+              <span class="fa-brands fa-linkedin-in" aria-hidden="true"></span>
+              <span class="sr-only">Linkedin</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/VikasB18" target="_blank">
+              <span class="fa-brands fa-github" aria-hidden="true"></span>
+              <span class="sr-only">GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="resumeLink">Resume</a>
+            <ul id="resumeOptions" style="display: none;">
+              <li><a href="https://drive.google.com/file/d/1L13-Aks4pJ_-CIMeo3sIPldkRFkNlSNr/view?usp=drive_link" target="_blank">View Resume</a></li>
+              <li><a href="https://drive.google.com/file/d/1L13-Aks4pJ_-CIMeo3sIPldkRFkNlSNr/view?usp=drive_link" download>Download Resume</a></li>
+            </ul>
+          </li>
+          
+          <script>
+            document.getElementById('resumeLink').addEventListener('click', function() {
+              var options = document.getElementById('resumeOptions');
+              if (options.style.display === 'none') {
+                options.style.display = 'block';
+              } else {
+                options.style.display = 'none';
+              }
+            });
+          </script>
+          
+        </ul>
+      </nav>
+    </span>
+  </header>
+  <section id="intro">
+    <p class="name">Hi, my name is <span>Vikas Bandi</span></p>
+    <h2>I develop Java applications</h2>
+    <p>I'm a developer specializing in Java, Spring Boot, Hibernate, and Angular/React for frontend</p>
+    <p>
+      Currently, I'm learning Java Full Stack Development to enhance my skills in backend and frontend development.
+  </p>
+
+</section>
+
+  <div class="gradient-separator"></div>
+  <section id="portfolio" class="section-alt--color sect-img-text--overlap">
+    <h2>Portfolio</h2>
+    <article>
+      <div class="img-text">
+        <h3>
+          Latest Project <span>Online Book Store </span>
+        </h3>
+        <p>
+          This web application is a simple bookstore where users can browse available books, add them to their cart, and make purchases. Administrators have additional privileges such as adding, modifying, and deleting books and users.
+          <br>
+          See it on <a href="https://github.com/VikasB18/OnlineBookStore">GitHub</a>.
+
+
+        </p>
+        <h4>Technologies used include:</h4>
+        <ul>
+          <li>SpringBoot</li>
+          <li>MySql</li>
+          <li>JPA</li>
+        </ul>
+      </div>
+      <img src="images/Bookstore.png" alt="Online Book Store Project">
+    </article>
+    <article>
+      <div class="img-text">
+        <h3>
+          Codecademy Project<span>ColmarAcademy project</span>
+        </h3>
+        <p>
+          This project was completed as part of Codecademy's Build a Website with HTML, CSS, and Github Pages Path. It serves as the capstone project where we applied our learning to build a responsive website from scratch. The goal was to create a landing page for a new school, Colmar Academy, using provided wireframes, videos, and image resources. All design decisions were made to complete the site, incorporating responsive design techniques and media queries to ensure compatibility with both desktop and mobile devices.
+          See it on <a href="https://github.com/VikasB18/ColmarAcademy">GitHub</a>.
+        </p>
+        <h4>Technologies used include:</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+        </ul>
+      </div>
+      <img src="images/ColmarAcademy.png" alt="ColmarAcademy project">
+    </article>
+  </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="text-align: center;">I am a Java Full Stack Developer with expertise in various technologies. I have extensive experience in building robust and scalable web applications using Java, Spring Boot, HTML, CSS, and Bootstrap. I am proficient in database management with SQL and have a strong understanding of software development principles.</p>
+
+    <div class="skills">
+      <h3 style="text-align: center;">Skills</h3>
+      <ul class="skills-list">
+        <li><i class="fab fa-java"></i> Java</li>
+        <li><i class="fab fa-spring"></i> Spring Boot</li>
+        <li><i class="fab fa-html5"></i> HTML</li>
+        <li><i class="fab fa-css3-alt"></i> CSS</li>
+        <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+        <li><i class="fas fa-database"></i> SQL</li>
+      </ul>
+    </div>
+    <div class="certifications" style="margin-top: 20px;">
+      <h3 style="text-align: center; margin-bottom: 20px;">Certifications</h3>
+      <div class="cert-card">
+        <img src="https://www.finoit.com/wp-content/uploads/2022/11/future-of-java-programming-language.jpg" alt="Java Certification" class="cert-image">
+        <div class="cert-details">
+          <p>Java</p>
+          <a href="#" class="cert-link">View Certification</a>
+        </div>
+      </div>
+      <div class="cert-card">
+        <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Bir52j_TZbbHoKNN8ZjkOw.png" alt="Spring Boot Certification" class="cert-image">
+        <div class="cert-details">
+          <p>Spring Boot </p>
+          <a href="springboot _ Codecademy.pdf" class="cert-link">View Certification</a>
+        </div>
+      </div>
+      <div class="cert-card">
+        <img src="https://img.freepik.com/free-vector/abstract-technology-sql-illustration_23-2149237139.jpg?w=740&t=st=1709802586~exp=1709803186~hmac=b9c7d56f354353fd9df4c0f86494d42a4af1e0af06e2c2c44ecc0fe810e13272" alt="SQL Certification" class="cert-image">
+        <div class="cert-details">
+          <p>SQL </p>
+          <a href="#" class="cert-link">View Certification</a>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+  
+  
+  <div class="gradient-separator"></div>
+  <div>
+    <section id="contact">
+      <h2>Contact me</h2>
+      <p>
+        Feel free to <a href="mailto:vikasmb2000@gmail.com">email me</a> to kickstart a conversation and explore the possibilities together.
+      </p>
+      
+    </section>
+  </div>
+  <div class="gradient-separator"></div>
+  <footer id="footer" class="section-alt--color">
+    <h2>Vikas Bandi</h2>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/in/vikas-bandi-90bb191bb/" target="_blank">
+          <span class="sr-only">Linkedin</span>
+          <span class="fa-brands fa-linkedin-in" aria-hidden="true"></span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/VikasB18" target="_blank">
+          <span class="sr-only">GitHub</span>
+          <span class="fa-brands fa-github" aria-hidden="true"></span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:vikasmb2000@gmail.com">
+          <span class="sr-only">Email</span>
+          <span class="fa-regular fa-envelope" aria-hidden="true"></span>
+        </a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
+</html>
