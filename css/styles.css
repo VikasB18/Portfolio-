@@ -643,12 +643,21 @@ footer li a {
 
 .skills-container {
   display: flex;
+  text-align: center;
 }
 
 .front-end-skills,
 .back-end-skills {
-  flex: 1 0 auto; /* Adjust width as needed */
+  flex: 1 0 auto; 
   padding: 10px;
+}
+
+.front-end-skills {
+  margin-right: 2cm;
+}
+
+.back-end-skills {
+  margin-left: 2cm;
 }
 
 .front-end-skills h4,
