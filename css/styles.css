@@ -640,3 +640,28 @@ footer li a {
 .cert-link:hover {
   color: var(--lightorange);
 }
+
+.skills-container {
+  display: flex;
+}
+
+.front-end-skills,
+.back-end-skills {
+  flex: 1 0 auto; /* Adjust width as needed */
+  padding: 10px;
+}
+
+.front-end-skills h4,
+.back-end-skills h4 {
+  text-align: center;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.skills-list li {
+  margin-bottom: 5px;
+}
